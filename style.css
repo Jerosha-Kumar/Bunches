@@ -22,7 +22,47 @@
             overflow-x: hidden;
             background-color: white;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .btn {
+            min-width: 160px;
+            text-align: center;
+            touch-action: manipulation;
+        }
+        @media (max-width: 576px) {
+            .btn {
+                 width: 100%;
+                 max-width: 280px;
+            }
+       }
+       .categories,
+       .products {
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   } 
+        @media (max-width: 576px) {
+    .hero {
+        padding: 40px 15px;
+    }
 
+    .hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+}
+    @media (max-width: 576px) {
+    .logo-container {
+        padding: 20px 0;
+    }
+}
+
+       
         h1, h2, h3, h4 {
             font-family: 'Georgia', serif;
             font-weight: 600;
